@@ -41,3 +41,23 @@ The automated setup of the development environment to work on a project is under
 When the `grind` program is supplied a keyword, it checks its registered keywords and `_grind` scripts.
 It executes the `_grind.grind` section of any matching keywords to set up the development environment.
 
+#### GRIND DEVELOPER PROFILES
+Each developer has their own preference of environment when working on a project. They should be able to customize how each `.grind` environment starts.
+
+Maybe for one (or all) projects, a certain Spotify playlist starts playing on the Desktop client.
+
+Maybe for one project, each separate program opened in the `.grind` environment opens in windows of certain sizes and orientations.
+	- for one project, there could be one such window layout written for dual monitors, and another for a single ultrawide screen
+
+#### EXTENDABILITY/NOTES
+1. This should support Windows 7/10 and some Linux--maybe Red Hat/Fedora. 
+2. Should the `grind` program be able to analyze a source code directory root and generate a `_grind` script?
+	- This concept could be called a 'source code profile' or something, and different profiles could be written for different project types
+	- ex: Unity projects, Python projects, Java projects, etc.
+	- optionally: could have inheritance
+		- ex: a Django 3.0 source code profile that inherits from the Python source code profile
+3. The `.grind` program should have to call simple plugins (cli programs) for its functionality
+	- ideally, the `grind` program would be smart enough to know which version plugin to use
+	- ex: a Windows 7/10 Chrome plugin to open documentation pages, a Unity plugin to open the Unity Engine
+	- ex: a Windows 10 Desktop Spotify client plugin to open Spotify links, a plugin to arrange a Windows 10 desktop window to certain sizes
+
