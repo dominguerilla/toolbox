@@ -27,7 +27,9 @@ The Powershell window that was used to run the grind program changes to the proj
 #### PREMISE
 Let's assume that every personal project I work on has a `_grind` script. 
 The `_grind` script consists of two sections:
+
 	- `.install`
+
 	- `.grind`
 
 When recloning my projects, I run the `_grind` script with an input of a `keyword` so that:
