@@ -1,6 +1,6 @@
 $toolBoxDir = Split-Path $script:MyInvocation.MyCommand.Path
 $executionPath = Get-Location
-cp "$toolBoxDir\unity-gitignore.gitignore" "$executionPath\.gitignore"
+cp "$toolBoxDir\gitignore\Unity.gitignore" "$executionPath\.gitignore"
 
 git init
 git add .
